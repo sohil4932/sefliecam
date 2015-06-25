@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Intel PhotoBooth</title>
+<link rel="stylesheet" href="css/interactioncam.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+</head>
+<body>
+  <div class="media">
+    <div id="videocontainer">
+      <video id="video"></video>
+    </div>
+    <canvas id="canvas"></canvas>
+  </div>
+  <div id="controls"> 
+    <button class="btn btn-primary btn-lg" id="resetbutton">Uh, let's try that again</button>
+    <button class="btn btn-primary btn-lg" id="uploadbutton">Win! Send this!</button>
+  </div>
+  <div id="email">
+    <div class="input-group input-group-lg" id="emailtext">
+      <span class="input-group-addon" id="sizing-addon1">@</span>
+      <input type="email" id="emailvalue" class="form-control" placeholder="me@example.com" aria-describedby="sizing-addon1">
+    </div>
+    <button class="btn btn-primary btn-lg" id="clickbutton">CLICK PHOTO</button>
+  </div>
+  <audio src="snap.wav"></audio>
+  <!-- http://www.freesound.org/people/thecheeseman/sounds/51360/ -->
+  <audio src="rip.wav"></audio>
+  <!-- http://www.freesound.org/people/aboe/sounds/68900/ -->
+  <audio src="takeoff.wav"></audio>
+  <!-- http://www.freesound.org/people/duckduckpony/sounds/130508/ -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/interactioncam.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
